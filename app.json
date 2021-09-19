@@ -1,6 +1,6 @@
 {
-    "name": "Image To Pdf Bot",
-    "description": "This Bot Converting Image To Pdf ",
+    "name": "PDF CONVERTER BOT",
+    "description": "This Bot Can Convert Image To Pdf ",
     "repository": "https://github.com/lntechnical2/iamgetopdfbot",
     "keywords": ["Pdf ", "pyrogram", "telegram bot"],
     "env": {
