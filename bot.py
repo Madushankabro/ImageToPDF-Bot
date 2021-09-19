@@ -28,7 +28,7 @@ I can convert Image to PDF.
 This bot was created by @epusthakalaya_bots""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/lntechnical"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/epusthakalayabotsupport"),
                     InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" ,url="https://t.me/epusthakalaya_bots"),
                 ],
                  [InlineKeyboardButton("ʀᴇᴠɪᴇᴡ ᴍᴇ", url="https://youtube.com/c/LNtechnical") ]       
