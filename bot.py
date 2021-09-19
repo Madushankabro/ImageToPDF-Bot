@@ -21,16 +21,20 @@ LIST = {}
 
 @app.on_message(filters.command(['start']))
 async def start(client, message):
- await message.reply_text(text =f"""Hello {message.from_user.first_name }image to pdf bot 
+ await message.reply_text(text =f"""Hello {message.from_user.first_name }I'm PDF CONVERTER BOT. 
 
 i can convert image to pdf
 
-This bot created by @mrlokaman""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
+This bot created by @epusthakalaya_bots""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical") ],
-                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]       ]        ) )
-
+                    InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical"),
+                    InlineKeyboardButton("Channel" ,url="https://t.me/epusthakalaya_bots"),.  
+                ],
+                 [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]       
+            ]        
+ )
+ )
 
 
 
@@ -65,7 +69,7 @@ async def done(client,message):
  path = f"{message.from_user.id}" + ".pdf"
  images[0].save(path, save_all = True, append_images = images[1:])
  
- await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here your pdf !!")
+ await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here your pdf !!\n Uploaded by:- @epusthakalaya_bots")
  os.remove(path)
  
  
