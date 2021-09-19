@@ -29,7 +29,7 @@ This bot created by @epusthakalaya_bots""",reply_to_message_id = message.message
             [
                 [
                     InlineKeyboardButton("Support 🇮🇳" ,url="https://t.me/lntechnical"),
-                    InlineKeyboardButton("Channel" ,url="https://t.me/epusthakalaya_bots"),.  
+                    InlineKeyboardButton("Channel" ,url="https://t.me/epusthakalaya_bots"),
                 ],
                  [InlineKeyboardButton("Subscribe 🧐", url="https://youtube.com/c/LNtechnical") ]       
             ]        
