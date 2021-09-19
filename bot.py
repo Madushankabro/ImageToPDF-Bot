@@ -53,7 +53,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])} Successfully Converted yor Image to PDF. If you want to convert more Images to PDF, Send them one by one.\n\n **If your process was over, click here 👉 /convert** ")
+ await ms.edit(f"{len(LIST[message.from_user.id])}Successfully Converted yor Image to PDF. If you want to convert more Images to PDF, Send them one by one.\n\n **If your process was over, click here 👉 /convert** ")
  
 
 @app.on_message(filters.command(['convert']))
