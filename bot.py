@@ -31,7 +31,7 @@ This bot was created by @epusthakalaya_bots""",reply_to_message_id = message.mes
                     InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/epusthakalayabotsupport"),
                     InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" ,url="https://t.me/epusthakalaya_bots"),
                 ],
-                 [InlineKeyboardButton("ʀᴇᴠɪᴇᴡ ᴍᴇ", url="https://youtube.com/c/LNtechnical") ]       
+                 [InlineKeyboardButton("ʀᴇᴠɪᴇᴡ ᴍᴇ", url="https://t.me/tlgrmcbot?start=epu_imagetopdf_bot") ]       
             ]        
  )
  )
@@ -69,7 +69,7 @@ async def done(client,message):
  path = f"{message.from_user.id}" + ".pdf"
  images[0].save(path, save_all = True, append_images = images[1:])
  
- await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here is your PDF !!\n Created by:- @epusthakalaya_bots")
+ await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here is your PDF !!\n*PDF Created by:- @epusthakalaya_bots*")
  os.remove(path)
  
  
