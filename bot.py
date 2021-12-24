@@ -21,19 +21,9 @@ LIST = {}
 
 @app.on_message(filters.command(['start']))
 async def start(client, message):
- await message.reply_text(text =f"""Hello {message.from_user.first_name }I'm 𝐈𝐌𝐀𝐆𝐄 𝐓𝐎 𝐏𝐃𝐅 𝐁𝐎𝐓. 
-
-I can convert Image to PDF.
-
-This bot was created by @epusthakalaya_bots""",reply_to_message_id = message.message_id ,  reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ" ,url="https://t.me/epusthakalayabotsupport"),
-                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ" ,url="https://t.me/epusthakalaya_bots"),
-                ],
-                 [InlineKeyboardButton("ʀᴇᴠɪᴇᴡ ᴍᴇ", url="https://t.me/tlgrmcbot?start=epu_imagetopdf_bot") ]       
-            ]        
- )
+ await message.reply_text(text =f"""- Welcome Dear, 
+- In Bot Convert Images To PDF ✅
+- Send Images To Be Converted To PDF""",reply_to_message_id = message.message_id 
  )
 
 
@@ -53,7 +43,7 @@ async def pdf(client,message):
  image = Image.open(file)
  img = image.convert('RGB')
  LIST[message.from_user.id].append(img)
- await ms.edit(f"{len(LIST[message.from_user.id])}Successfully Converted yor Image to PDF. If you want to convert more Images to PDF, Send them one by one.\n\n **If your process was over, click here 👉 /convert** ")
+ await ms.edit(f"{len(LIST[message.from_user.id])}Successful Created PDF If You Want Add More Image Send Me One By One.\n\n **في حالة الانتهاء ، انقر هنا 👉 /convert** ")
  
 
 @app.on_message(filters.command(['convert']))
@@ -69,7 +59,7 @@ async def done(client,message):
  path = f"{message.from_user.id}" + ".pdf"
  images[0].save(path, save_all = True, append_images = images[1:])
  
- await client.send_document(message.from_user.id, open(path, "rb"), caption = "Here is your PDF !!\n**PDF Created by:- @epusthakalaya_bots**")
+ await client.send_document(message.from_user.id, open(path, "rb"), caption = "تفضل ملف PDF !!\n**PDF Created By : @GaN2OO1**")
  os.remove(path)
  
  
